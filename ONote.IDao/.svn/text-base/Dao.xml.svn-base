@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database">                   
+    <!-- 用以我们在其它的应用程序中，配置数据访问 -->
+    <object type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+        <property name="ConfigSections" value="databaseSettings"/>
+    </object>
+
+
+  <!-- 数据库和Nhibernate的相关配置 -->
+     <!--<db:provider id="DbProvider"
+                     provider="SqlServer-2.0"
+                     connectionString="Data Source=WIN-20100917GWP;Database=ONote;User ID=sa;Password=miaozhuang@0121;Integrated Security=false;User Instance=false;"/>-->
+ <db:provider id="DbProvider"
+  provider="SqlServerCe-3.5.1"
+  connectionString="Data Source=${db.datasource};Encrypt Database=True;Password=${db.password}"/>
+ 
+
+
+  <!--SessionFactory对象，其中包括一些比较重要的属性 -->              
+    <object id="NHibernateSessionFactory" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate30">
+       <property name="DbProvider" ref="DbProvider"/>
+    
+        <property name="MappingAssemblies">
+            <list>
+                <value>ONote.Model</value>
+            </list>
+        </property>
+        <property name="HibernateProperties">
+            <dictionary>
+
+               
+
+              <entry key="hibernate.current_session_context_class"  value="Spring.Data.NHibernate.SpringSessionContext, Spring.Data.NHibernate30"/>
+              <entry key="hibernate.connection.provider"  value="NHibernate.Connection.DriverConnectionProvider"/>
+              <entry key="dialect" value="NHibernate.Dialect.MsSqlCeDialect"/>
+              <entry key="hibernate.connection.driver_class"  value="NHibernate.Driver.SqlServerCeDriver"/>
+              <entry key="use_outer_join" value="true"/>
+              <entry key="hibernate.show_sql" value="false"/>
+              <!--<entry key="hibernate.connection.connection_string" value="Data Source=C:\Documents and Settings\800040443\ONote.sdf"/>-->
+              <!--<entry key="hibernate.query.substitutions" value="true=1;false=0"/>-->
+
+
+              <!--<entry key="hibernate.current_session_context_class"
+	   value="Spring.Data.NHibernate.SpringSessionContext, Spring.Data.NHibernate30"/>
+                <entry key="hibernate.connection.provider"
+                       value="NHibernate.Connection.DriverConnectionProvider"/>
+                <entry key="dialect"
+                       value="NHibernate.Dialect.MsSql2008Dialect"/>
+                <entry key="hibernate.connection.driver_class"
+                       value="NHibernate.Driver.SqlClientDriver"/>
+				<entry key="use_outer_join" value="true"/>
+				<entry key="hibernate.show_sql" value="false"/>-->
+              
+              
+				<!--超时时间-->
+				<entry key="command_timeout" value="60"/>
+				<!--显式启用二级缓存-->
+				<entry key="cache.use_second_level_cache" value="true"/>
+				<entry key="query.substitutions" value="true 1, false 0, yes 'Y', no 'N'"/>
+				<entry key="proxyfactory.factory_class"
+					   value="NHibernate.ByteCode.LinFu.ProxyFactoryFactory, NHibernate.ByteCode.LinFu"/>
+            </dictionary>
+        </property>
+		
+        <property name="ExposeTransactionAwareSessionFactory" value="true" />
+    </object>
+
+    <!--将id为NHibernateSessionFactory的对象注入到HibernateTemplate中-->
+	<object id="HibernateTemplate" type="Spring.Data.NHibernate.Generic.HibernateTemplate">
+		<property name="SessionFactory" ref="NHibernateSessionFactory" />
+		<property name="TemplateFlushMode" value="Auto" />
+		<property name="CacheQueries" value="true" />
+	</object>
+
+    <!-- 数据访问类，将HibernateTemplate注入进来-->
+    <object id="UserDao" type="ONote.Dao.UserDao, ONote.Dao">
+        <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    </object>
+
+  <object id="CategoryDao" type="ONote.Dao.CategoryDao, ONote.Dao">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="NoteDao" type="ONote.Dao.NoteDao, ONote.Dao">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="AddressBookDao" type="ONote.Dao.AddressBookDao, ONote.Dao">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+</objects>
+

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bf1a7fdd-b114-4014-a36d-9790c09847ee" name="Administrator@WIN-20100917GWP 2011-10-02 17:31:46" runUser="WIN-20100917GWP\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d8a11410-e764-4fd1-a59f-afb07cd8c00b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_WIN-20100917GWP 2011-10-02 17_31_46">
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\ONote.Dao\bin\Debug\ONote.Dao.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\ONote.IDao\bin\Debug\ONote.IDao.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\lib\spring\Iesi.Collections.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\lib\spring\NHibernate.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\ONote.Service\bin\Debug\ONote.Service.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\lib\spring\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\ONote.Common\bin\Debug\ONote.Common.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\ONote.IService\bin\Debug\ONote.IService.dll" />
+      <DeploymentItem filename="E:\桌面2\英佳\ONote\ONote.Model\bin\Debug\ONote.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-10-02T17:31:47.0685393+08:00" queuing="2011-10-02T17:31:54.2789550+08:00" start="2011-10-02T17:31:55.1060600+08:00" finish="2011-10-02T17:31:58.7955285+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateTable" storage="e:\桌面2\英佳\onote\unittest\bin\debug\unittest.dll" id="dd42e8bb-dcb6-51f1-dd26-cd74f6c669b8">
+      <Execution id="c9eb6e6a-6932-4478-92ed-430a92ee4d56" />
+      <TestMethod codeBase="E:/桌面2/英佳/ONote/UnitTest/bin/Debug/UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.UnitTest1, UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTable" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="dd42e8bb-dcb6-51f1-dd26-cd74f6c669b8" executionId="c9eb6e6a-6932-4478-92ed-430a92ee4d56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c9eb6e6a-6932-4478-92ed-430a92ee4d56" testId="dd42e8bb-dcb6-51f1-dd26-cd74f6c669b8" testName="CreateTable" computerName="WIN-20100917GWP" duration="00:00:02.0389851" startTime="2011-10-02T17:31:55.4441029+08:00" endTime="2011-10-02T17:31:58.4579856+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9eb6e6a-6932-4478-92ed-430a92ee4d56">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 UnitTest.UnitTest1.CreateTable 引发了异常: 
+NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: 未能找到文件“E:\桌面2\英佳\ONote\UnitTest\bin\Debug\hibernate.cfg.xml”。</Message>
+          <StackTrace>    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlTextReader.Read()
+   在 System.Xml.XmlCharCheckingReader.Read()
+   在 System.Xml.XsdValidatingReader.Read()
+   在 System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   在 System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   在 NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- 内部异常堆栈跟踪的末尾 ---
+    在 NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   在 NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   在 NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   在 NHibernate.Cfg.Configuration.Configure()
+   在 UnitTest.UnitTest1.CreateTable() 位置 E:\桌面2\英佳\ONote\UnitTest\UnitTest1.cs:行号 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

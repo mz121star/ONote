@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ONote/!svn/ver/2/ONote/ONote.IService
+END
+Services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ONote/!svn/ver/2/ONote/ONote.IService/Services.xml
+END
+INoteService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ONote/!svn/ver/2/ONote/ONote.IService/INoteService.cs
+END
+ICategoryService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ONote/!svn/ver/2/ONote/ONote.IService/ICategoryService.cs
+END
+ONote.IService.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ONote/!svn/ver/2/ONote/ONote.IService/ONote.IService.csproj
+END
+IUserService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ONote/!svn/ver/2/ONote/ONote.IService/IUserService.cs
+END
+IAddressBookService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ONote/!svn/ver/2/ONote/ONote.IService/IAddressBookService.cs
+END

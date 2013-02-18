@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{481AC235-CA7C-438E-9DBD-11C9D4096B9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ONote</RootNamespace>
+    <AssemblyName>ONote</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>notepad.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.1.3.42154, Culture=neutral, PublicKeyToken=3a9cab8f8d22bfb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.SHDocVw">
+      <HintPath>..\lib\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=10.0.0.0, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
+    <Reference Include="HTMLEditorControl">
+      <HintPath>..\lib\HTMLEditorControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate">
+      <HintPath>..\lib\spring\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\lib\spring\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.Prevalence">
+      <HintPath>..\lib\spring\NHibernate.Caches.Prevalence.dll</HintPath>
+    </Reference>
+    <Reference Include="Sonic.HtmlEditor">
+      <HintPath>..\lib\Sonic.HtmlEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\lib\spring\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.1.20711, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\spring\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data">
+      <HintPath>..\lib\spring\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate30">
+      <HintPath>..\lib\spring\Spring.Data.NHibernate30.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.NET">
+      <HintPath>..\lib\SQLite.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormHTMLTextBox">
+      <HintPath>..\lib\WinFormHTMLTextBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressBookEditfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressBookEditfrm.Designer.cs">
+      <DependentUpon>AddressBookEditfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressBookfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressBookfrm.Designer.cs">
+      <DependentUpon>AddressBookfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendarfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendarfrm.Designer.cs">
+      <DependentUpon>Calendarfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryManagementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryManagementFrm.Designer.cs">
+      <DependentUpon>CategoryManagementFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCommon.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoteEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteEditFrm.Designer.cs">
+      <DependentUpon>NoteEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notesfrm.Designer.cs">
+      <DependentUpon>Notesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ONoteEnvService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recyclefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recyclefrm.Designer.cs">
+      <DependentUpon>Recyclefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Remindfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remindfrm.Designer.cs">
+      <DependentUpon>Remindfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemindService.cs" />
+    <Compile Include="RemindServicefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemindServicefrm.Designer.cs">
+      <DependentUpon>RemindServicefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupInit.cs" />
+    <Compile Include="StartupInitRegisterUserfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupInitRegisterUserfrm.Designer.cs">
+      <DependentUpon>StartupInitRegisterUserfrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddressBookEditfrm.resx">
+      <DependentUpon>AddressBookEditfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressBookfrm.resx">
+      <DependentUpon>AddressBookfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendarfrm.resx">
+      <DependentUpon>Calendarfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryManagementFrm.resx">
+      <DependentUpon>CategoryManagementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteEditFrm.resx">
+      <DependentUpon>NoteEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notesfrm.resx">
+      <DependentUpon>Notesfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recyclefrm.resx">
+      <DependentUpon>Recyclefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remindfrm.resx">
+      <DependentUpon>Remindfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemindServicefrm.resx">
+      <DependentUpon>RemindServicefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupInitRegisterUserfrm.resx">
+      <DependentUpon>StartupInitRegisterUserfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ONote.Common\ONote.Common.csproj">
+      <Project>{215FFADD-C899-4046-8962-7A8CC01D5B61}</Project>
+      <Name>ONote.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ONote.Dao\ONote.Dao.csproj">
+      <Project>{727F7FC3-CB6F-4676-8E02-BF7DD122DF26}</Project>
+      <Name>ONote.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ONote.Dto\ONote.Dto.csproj">
+      <Project>{9DE3465E-A597-4660-8749-5D2026A8D53D}</Project>
+      <Name>ONote.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ONote.IDao\ONote.IDao.csproj">
+      <Project>{A4137B3B-6019-4775-87DD-EAC3DA8E5DFE}</Project>
+      <Name>ONote.IDao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ONote.IService\ONote.IService.csproj">
+      <Project>{EAAC6918-D9F7-41D1-9BF9-B091AD0621A3}</Project>
+      <Name>ONote.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ONote.Model\ONote.Model.csproj">
+      <Project>{67EB7C93-7517-4280-A4F3-A9EC57BE0EC5}</Project>
+      <Name>ONote.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ONote.Service\ONote.Service.csproj">
+      <Project>{72AF04F6-1244-462E-8AFD-024D226C5919}</Project>
+      <Name>ONote.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="notepad.ico" />
+    <Content Include="objects.xml" />
+    <None Include="Resources\revert.png" />
+    <None Include="Resources\blue_external_drive_backup.png" />
+    <None Include="Resources\edit_trash.png" />
+    <None Include="Resources\smallx_office_calendar3.png" />
+    <None Include="Resources\smallkmenuedit.png" />
+    <None Include="Resources\smallstock_appointment_reminder.png" />
+    <None Include="Resources\smalladdress.png" />
+    <None Include="Resources\smallx_office_calendar2.png" />
+    <None Include="Resources\smallx_office_calendar1.png" />
+    <None Include="Resources\smallx_office_calendar.png" />
+    <None Include="Resources\contacts_1.png" />
+    <None Include="Resources\x_office_calendar.png" />
+    <None Include="Resources\stock_appointment_reminder.png" />
+    <None Include="Resources\contacts_.png" />
+    <None Include="Resources\contact_new_ %282%29.png" />
+    <None Include="Resources\gnome_edit_delete.png" />
+    <None Include="Resources\kmenuedit.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\button_reminder_01.png" />
+    <None Include="Resources\calendar2.png" />
+    <None Include="Resources\managernotepad.png" />
+    <None Include="Resources\newnotepad.png" />
+    <None Include="Resources\newnotepad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

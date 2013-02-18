@@ -1,0 +1,11 @@
+E:\ONote\ONote.Dto\bin\Debug\ONote.Dto.exe
+E:\ONote\ONote.Dto\bin\Debug\ONote.Dto.pdb
+E:\ONote\ONote.Dto\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\ONote\ONote.Dto\obj\x86\Debug\ONote.Dto.exe
+E:\ONote\ONote.Dto\obj\x86\Debug\ONote.Dto.pdb
+E:\桌面2\英佳\ONote\ONote.Dto\bin\Debug\ONote.Dto.pdb
+E:\桌面2\英佳\ONote\ONote.Dto\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\桌面2\英佳\ONote\ONote.Dto\obj\x86\Debug\ONote.Dto.pdb
+E:\桌面2\英佳\ONote\ONote.Dto\bin\Debug\ONote.Dto.dll.config
+E:\桌面2\英佳\ONote\ONote.Dto\bin\Debug\ONote.Dto.dll
+E:\桌面2\英佳\ONote\ONote.Dto\obj\x86\Debug\ONote.Dto.dll

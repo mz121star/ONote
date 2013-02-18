@@ -1,0 +1,10 @@
+E:\桌面2\英佳\ONote\ONote.Model\bin\Debug\ONote.Model.dll
+E:\桌面2\英佳\ONote\ONote.Model\bin\Debug\ONote.Model.pdb
+E:\桌面2\英佳\ONote\ONote.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\桌面2\英佳\ONote\ONote.Model\obj\Debug\ONote.Model.dll
+E:\桌面2\英佳\ONote\ONote.Model\obj\Debug\ONote.Model.pdb
+E:\ONote\ONote.Model\bin\Debug\ONote.Model.dll
+E:\ONote\ONote.Model\bin\Debug\ONote.Model.pdb
+E:\ONote\ONote.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\ONote\ONote.Model\obj\Debug\ONote.Model.dll
+E:\ONote\ONote.Model\obj\Debug\ONote.Model.pdb

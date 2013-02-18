@@ -1,0 +1,15 @@
+E:\桌面2\英佳\ONote\ONote.Model\bin\Release\ONote.Model.dll
+E:\桌面2\英佳\ONote\ONote.Model\bin\Release\ONote.Model.pdb
+E:\桌面2\英佳\ONote\ONote.Model\obj\Release\ResolveAssemblyReference.cache
+E:\桌面2\英佳\ONote\ONote.Model\obj\Release\ONote.Model.dll
+E:\桌面2\英佳\ONote\ONote.Model\obj\Release\ONote.Model.pdb
+E:\桌面2\英佳\ONoteNew1\ONote.Model\bin\Release\ONote.Model.dll
+E:\桌面2\英佳\ONoteNew1\ONote.Model\bin\Release\ONote.Model.pdb
+E:\桌面2\英佳\ONoteNew1\ONote.Model\obj\Release\ResolveAssemblyReference.cache
+E:\桌面2\英佳\ONoteNew1\ONote.Model\obj\Release\ONote.Model.dll
+E:\桌面2\英佳\ONoteNew1\ONote.Model\obj\Release\ONote.Model.pdb
+E:\CodeSource\英佳\ONoteNew1\ONote.Model\bin\Release\ONote.Model.dll
+E:\CodeSource\英佳\ONoteNew1\ONote.Model\bin\Release\ONote.Model.pdb
+E:\CodeSource\英佳\ONoteNew1\ONote.Model\obj\Release\ONote.Model.csprojResolveAssemblyReference.cache
+E:\CodeSource\英佳\ONoteNew1\ONote.Model\obj\Release\ONote.Model.dll
+E:\CodeSource\英佳\ONoteNew1\ONote.Model\obj\Release\ONote.Model.pdb

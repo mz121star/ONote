@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto
+END
+QueryAddressBookDto.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto/QueryAddressBookDto.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto/app.config
+END
+QueryNoteDto.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto/QueryNoteDto.cs
+END
+ONote.Dto.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto/ONote.Dto.csproj
+END
+RemindDto.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto/RemindDto.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ONote/!svn/ver/2/ONote/ONote.Dto/Program.cs
+END

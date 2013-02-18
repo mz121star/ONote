@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/ONote/!svn/ver/3/ONote/ONote.Common
+END
+Class1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ONote/!svn/ver/3/ONote/ONote.Common/Class1.cs
+END
+ONote.Common.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ONote/!svn/ver/2/ONote/ONote.Common/ONote.Common.csproj
+END
+DynamicLibrary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ONote/!svn/ver/2/ONote/ONote.Common/DynamicLibrary.cs
+END

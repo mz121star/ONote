@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ONote/!svn/ver/2/ONote/ONote.Model
+END
+Category.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/Category.cs
+END
+Category.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/Category.hbm.xml
+END
+ONote.Model.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/ONote.Model.csproj
+END
+User.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/User.cs
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/User.hbm.xml
+END
+AddressBook.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/AddressBook.cs
+END
+AddressBook.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/AddressBook.hbm.xml
+END
+Note.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/Note.cs
+END
+Note.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ONote/!svn/ver/2/ONote/ONote.Model/Note.hbm.xml
+END

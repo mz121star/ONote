@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+    <object id="transactionManager"
+          type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate30">
+        <property name="DbProvider" ref="DbProvider"/>
+        <property name="SessionFactory" ref="NHibernateSessionFactory"/>
+    </object>
+
+
+    <object id="TransactionInterceptor" type="Spring.Transaction.Interceptor.TransactionInterceptor, Spring.Data">
+        <property name="TransactionManager" ref="transactionManager"/>
+        <property name="TransactionAttributeSource">
+            <object type="Spring.Transaction.Interceptor.AttributesTransactionAttributeSource, Spring.Data"/>
+        </property>
+    </object>
+    
+    
+    <object id="BaseTransactionManager"  type="Spring.Transaction.Interceptor.TransactionProxyFactoryObject" abstract="true">
+        <property name="PlatformTransactionManager" ref="transactionManager"/>
+        <property name="TransactionAttributes">
+            <name-values>
+                <add key="Save*" value="PROPAGATION_REQUIRED"/>
+                <add key="Set*" value="PROPAGATION_REQUIRED"/>
+                <add key="Finish*" value="PROPAGATION_REQUIRED"/>
+                <add key="Update*" value="PROPAGATION_REQUIRED"/>
+                <add key="Delete*" value="PROPAGATION_REQUIRED"/>
+                <add key="Add*" value="PROPAGATION_REQUIRED"/>
+                <add key="Get*" value="PROPAGATION_REQUIRED,readOnly"/>
+                <add key="Find*" value="PROPAGATION_REQUIRED,readOnly"/>
+                <add key="Load*" value="PROPAGATION_REQUIRED,readOnly"/>
+                <add key="*" value="PROPAGATION_REQUIRED"/>
+            </name-values>
+        </property>
+    </object>
+    
+    
+      
+    <!-- Property placeholder configurer for database settings -->
+    <object id="UserService" type="ONote.Service.UserService,ONote.Service">
+        <property name="Dao" ref="UserDao"/>
+    </object>
+
+  <object id="CategoryService" type="ONote.Service.CategoryService,ONote.Service">
+    <property name="Dao" ref="CategoryDao"/>
+  </object>
+  <object id="NoteService" type="ONote.Service.NoteService,ONote.Service">
+    <property name="Dao" ref="NoteDao"/>
+  </object>
+  <object id="AddressBookService" type="ONote.Service.AddressBookService,ONote.Service">
+    <property name="Dao" ref="AddressBookDao"/>
+  </object>
+
+
+  <!-- 事务 -->
+    <object id="UserServiceTrans" parent="BaseTransactionManager">
+        <property name="Target" ref="UserService"/>
+    </object>
+  
+  <object id="CategoryServiceTrans" parent="BaseTransactionManager">
+    <property name="Target" ref="CategoryService"/>
+  </object>
+  <object id="NoteServiceTrans" parent="BaseTransactionManager">
+    <property name="Target" ref="NoteService"/>
+  </object>
+  <object id="AddressBookServiceTrans" parent="BaseTransactionManager">
+    <property name="Target" ref="AddressBookService"/>
+  </object>
+</objects>

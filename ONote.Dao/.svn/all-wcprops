@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/ONote/!svn/ver/2/ONote/ONote.Dao
+END
+CategoryDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ONote/!svn/ver/2/ONote/ONote.Dao/CategoryDao.cs
+END
+ONote.Dao.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ONote/!svn/ver/2/ONote/ONote.Dao/ONote.Dao.csproj
+END
+UserDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ONote/!svn/ver/4/ONote/ONote.Dao/UserDao.cs
+END
+AddressBookDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ONote/!svn/ver/2/ONote/ONote.Dao/AddressBookDao.cs
+END
+NoteDao.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ONote/!svn/ver/2/ONote/ONote.Dao/NoteDao.cs
+END
